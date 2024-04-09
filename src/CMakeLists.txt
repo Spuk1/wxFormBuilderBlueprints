@@ -59,6 +59,10 @@ target_sources(wxFormBuilder_app
     model/types.h
     model/xrcfilter.cpp
     model/xrcfilter.h
+    rad/blueprintEditor/bpPanel.h
+    rad/blueprintEditor/bpPanel.cpp
+    rad/blueprintEditor/blueprintEditor.cpp
+    rad/blueprintEditor/blueprintEditor.h
     rad/about.cpp
     rad/about.h
     rad/appdata.cpp

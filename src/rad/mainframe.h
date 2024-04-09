@@ -34,6 +34,7 @@
 #include "utils/wxfbdefs.h"
 
 
+
 class CppPanel;
 class LuaPanel;
 class ObjectInspector;
@@ -47,6 +48,7 @@ class wxFBObjectEvent;
 class wxFbPalette;
 class wxFBPropertyEvent;
 class XrcPanel;
+class bpPanel;
 
 
 /**
@@ -75,6 +77,7 @@ private:
     LuaPanel* m_lua;
     PHPPanel* m_php;
     XrcPanel* m_xrc;
+    bpPanel* m_bp;
     int m_style;
 
     // Save which page is selected

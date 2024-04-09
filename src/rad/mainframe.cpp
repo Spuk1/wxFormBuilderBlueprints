@@ -29,7 +29,7 @@
 #include <wx/config.h>
 
 #include <common/xmlutils.h>
-
+#include "rad/blueprintEditor/bpPanel.h"
 #include "model/xrcfilter.h"
 #include "rad/about.h"
 #include "rad/appdata.h"
@@ -1697,6 +1697,11 @@ wxWindow* MainFrame::CreateDesignerWindow(wxWindow* parent)
     m_xrc = new XrcPanel(m_notebook, wxID_ANY);
     m_notebook->InsertPage(5, m_xrc, wxT("XRC"), false);
     m_notebook->SetPageBitmap(5, AppBitmaps::GetBitmap(wxT("xrc"), AppBitmaps::Size::Icon_Medium));
+
+    m_bp = new bpPanel(m_notebook, wxID_ANY);
+    m_notebook->InsertPage(6, m_bp, wxT("BP"), false);
+    m_notebook->SetPageBitmap(6, AppBitmaps::GetBitmap(wxT("BP"), AppBitmaps::Size::Icon_Medium));
+
 
     return m_notebook;
 }
